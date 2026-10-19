@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LogisticsIQ panoları</title>
+<meta name="description" content="LogisticsIQ'nun lojistik topluluğu için hazırlayıp herkese açık yayımladığı panolar ve araçlar.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --fg: #1f1d2b;
+    --muted: #5d5a6e;
+    --line: #e4e1ea;
+    --card: #ffffff;
+    --brand: #3d3768;
+    --accent: #c4552b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16151f;
+      --fg: #eceaf3;
+      --muted: #a9a6b8;
+      --line: #2e2c3d;
+      --card: #1e1d2a;
+      --brand: #c3bdf2;
+      --accent: #f58d65;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+  header img { width: 40px; height: 40px; }
+  header a { color: var(--fg); font-weight: 650; font-size: 18px; text-decoration: none; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 16px; color: var(--brand); }
+  p { margin: 0 0 12px; }
+  .en { color: var(--muted); }
+  a { color: var(--brand); }
+  h2 { font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 40px 0 12px; }
+  ul.panolar { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  ul.panolar li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  ul.panolar li > a { font-weight: 650; font-size: 18px; text-decoration: none; }
+  ul.panolar li > a:hover { text-decoration: underline; }
+  ul.panolar li p { margin: 4px 0 6px; }
+  ul.panolar small { color: var(--muted); }
+  .bos { border: 1px dashed var(--line); border-radius: 12px; padding: 16px 18px; color: var(--muted); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer p { margin: 0 0 6px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.svg" alt="">
+    <a href="https://logisticsiq.org">LogisticsIQ</a>
+  </header>
+
+  <h1>Panolar ve araçlar</h1>
+  <p>LogisticsIQ'nun lojistik topluluğu için hazırlayıp herkese açık yayımladığı panolar bu sayfada listelenir. Kariyer ve bilgi platformumuzun kendisi <a href="https://logisticsiq.org">logisticsiq.org</a> adresinde.</p>
+  <p class="en" lang="en">Dashboards and tools that LogisticsIQ builds for the logistics community and publishes openly are listed here. Our career and knowledge platform is at <a href="https://logisticsiq.org">logisticsiq.org</a>.</p>
+
+  <h2>Panolar <span lang="en">/ Dashboards</span></h2>
+
+  <!-- PANO LİSTESİ. Yeni panoyu listenin en üstüne ekleyin ve ilk pano eklenince aşağıdaki "bos" paragrafını silin.
+  Örnek satır:
+    <li>
+      <a href="klasor-adi/">Pano başlığı</a>
+      <p>Panonun ne gösterdiğini anlatan tek cümle.</p>
+      <small>Yayın: 2026-10-20 · Kaynak: verinin kaynağı ve alındığı tarih</small>
+    </li>
+  -->
+  <ul class="panolar">
+  </ul>
+  <p class="bos">Henüz yayımlanmış bir pano yok. <span lang="en">No dashboards have been published yet.</span></p>
+
+  <footer>
+    <p>Bu sayfadaki her şey herkese açıktır. Üyelere ait bilgiler burada yayımlanmaz.</p>
+    <p lang="en">Everything on this page is public. Member information is not published here.</p>
+    <p><a href="https://github.com/logisticsiq-org">github.com/logisticsiq-org</a></p>
+  </footer>
+</main>
+</body>
+</html>
